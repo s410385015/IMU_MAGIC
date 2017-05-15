@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 70281e3149539b24990113576251f213
+timeCreated: 1493146835
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Masaaki
+  fontNames:
+  - Masaaki
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 506c3af24d5c403409da2dee899db800, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

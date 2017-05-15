@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 39536495ec9cf184a9aa6757f7623f1a
+timeCreated: 1493756159
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Magic School One
+  fontNames:
+  - Magic School One
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+	    function doPreview() {
+	        var canvas = document.getElementById("canvas");
+	        var ctx = canvas.getContext("2d");
+
+			var imglist = [
+				'./pipo-crystal01_anime_10000.png',
+				'./pipo-crystal01_anime_10001.png',
+				'./pipo-crystal01_anime_10002.png',
+				'./pipo-crystal01_anime_10003.png',
+				'./pipo-crystal01_anime_10004.png',
+				'./pipo-crystal01_anime_10005.png',
+				'./pipo-crystal01_anime_10006.png',
+				'./pipo-crystal01_anime_10007.png',
+				'./pipo-crystal01_anime_10008.png',
+				'./pipo-crystal01_anime_10009.png',
+				'./pipo-crystal01_anime_10010.png',
+				'./pipo-crystal01_anime_10011.png',
+				'./pipo-crystal01_anime_10012.png',
+				'./pipo-crystal01_anime_10013.png',
+				'./pipo-crystal01_anime_10014.png',
+				'./pipo-crystal01_anime_10015.png',
+				'./pipo-crystal01_anime_10016.png',
+				'./pipo-crystal01_anime_10017.png',
+				'./pipo-crystal01_anime_10018.png',
+				'./pipo-crystal01_anime_10019.png',
+				'./pipo-crystal01_anime_10020.png',
+				'./pipo-crystal01_anime_10021.png',
+				'./pipo-crystal01_anime_10022.png',
+				'./pipo-crystal01_anime_10023.png',
+				'./pipo-crystal01_anime_10024.png',
+				'./pipo-crystal01_anime_10025.png',
+				'./pipo-crystal01_anime_10026.png',
+				'./pipo-crystal01_anime_10027.png',
+				'./pipo-crystal01_anime_10028.png',
+				'./pipo-crystal01_anime_10029.png',
+				'./pipo-crystal01_anime_10030.png',
+				'./pipo-crystal01_anime_10031.png',
+				'./pipo-crystal01_anime_10032.png',
+				'./pipo-crystal01_anime_10033.png',
+				'./pipo-crystal01_anime_10034.png',
+				'./pipo-crystal01_anime_10035.png',
+				'./pipo-crystal01_anime_10036.png',
+				'./pipo-crystal01_anime_10037.png',
+				'./pipo-crystal01_anime_10038.png',
+				'./pipo-crystal01_anime_10039.png',
+
+			];
+			
+			var imglistsize = imglist.length;
+			var img = new Array(imglistsize);
+			for ( var i = 0 ; i < imglistsize ; i++ )
+			{
+				img[i] = new Image();
+				img[i].src = imglist[i];
+			}
+			
+			var cnt = 0;
+	        setInterval(function () {
+	            ctx.save();
+	            ctx.clearRect(-480, -480, 480 * 2, 480 * 2);
+				ctx.drawImage( img[cnt] , 0 , 0 );
+	            ctx.restore();
+				cnt++;
+				if (cnt >= imglistsize ) cnt = 0;
+	        }, 33);
+
+	    };
+	</script>
+</head>
+
+<body onLoad="doPreview()">
+    <div id="Screen" style="font-size:8px;text-align:center;"></div>
+	<canvas id="canvas" width="480" height="480">
+	</canvas>
+</body>
+
+</html>
